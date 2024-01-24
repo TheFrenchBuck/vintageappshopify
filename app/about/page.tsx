@@ -58,15 +58,15 @@ function Culture() {
 
 const team = [
   {
-    title: 'Leadership',
+    title: 'Direction',
     people: [
       {
-        name: 'Leslie Alexander',
+        name: 'Gabriel Morin',
         role: 'Co-Founder / CEO',
         image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Michael Foster',
+        name: 'Zachary Arsenault',
         role: 'Co-Founder / CTO',
         image: { src: imageMichaelFoster },
       },
@@ -128,12 +128,84 @@ const team = [
     ],
   },
 ]
+const teamfr = [
+  {
+    title: "Direction",
+    people: [
+      {
+        name: "Gabriel Morin",
+        role: "Co-Fondateur / PDG",
+        image: { src: imageLeslieAlexander },
+      },
+      {
+        name: "Zachary Arsenault",
+        role: "Co-Fondateur / CTO",
+        image: { src: imageMichaelFoster },
+      },
+      {
+        name: "Dries Vincent",
+        role: "Associé et Relations d'Affaires",
+        image: { src: imageDriesVincent },
+      },
+    ],
+  },
+  {
+    title: "Équipe",
+    people: [
+      {
+        name: "Chelsea Hagon",
+        role: "Développeur Senior",
+        image: { src: imageChelseaHagon },
+      },
+      {
+        name: "Emma Dorsey",
+        role: "Designer Senior",
+        image: { src: imageEmmaDorsey },
+      },
+      {
+        name: "Leonard Krasner",
+        role: "VP, Expérience Utilisateur",
+        image: { src: imageLeonardKrasner },
+      },
+      {
+        name: "Blake Reid",
+        role: "Rédacteur Junior",
+        image: { src: imageBlakeReid },
+      },
+      {
+        name: "Kathryn Murphy",
+        role: "VP, Ressources Humaines",
+        image: { src: imageKathrynMurphy },
+      },
+      {
+        name: "Whitney Francis",
+        role: "Spécialiste du Contenu",
+        image: { src: imageWhitneyFrancis },
+      },
+      {
+        name: "Jeffrey Webb",
+        role: "Coordinateur de Compte",
+        image: { src: imageJeffreyWebb },
+      },
+      {
+        name: "Benjamin Russel",
+        role: "Développeur Senior",
+        image: { src: imageBenjaminRussel },
+      },
+      {
+        name: "Angela Fisher",
+        role: "Développeur Front-end",
+        image: { src: imageAngelaFisher },
+      },
+    ],
+  },
+];
 
 function Team() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <div className="space-y-24">
-        {team.map((group) => (
+        {teamfr.map((group) => (
           <FadeInStagger key={group.title}>
             <Border as={FadeIn} />
             <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
