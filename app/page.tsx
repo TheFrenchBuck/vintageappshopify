@@ -38,7 +38,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+          Nous avons travaillé avec des centaines de personnes incroyables
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -73,9 +73,7 @@ function CaseStudies({
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+        Nous croyons que la technologie est la réponse aux plus grands défis du monde. C'est aussi la cause, alors nous nous retrouvons dans une situation un peu délicate.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -104,7 +102,7 @@ function CaseStudies({
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>Étude de cas</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -126,12 +124,12 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="Nous vous aidons à identifier, explorer et répondre à de nouvelles opportunités."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+        Tant que ces opportunités impliquent de nous donner de l'argent pour réutiliser d'anciens projets, nous pouvons en proposer un nombre infini.
+
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -146,25 +144,18 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
-            </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
-            </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
-            </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
-            </ListItem>
+          <ListItem title="Développement Web">
+    Nous sommes spécialisés dans la création de pages marketing magnifiques et de haute qualité. Le reste du site web sera une coquille qui utilise du lorem ipsum partout.
+  </ListItem>
+  <ListItem title="Développement d'Applications">
+    Nous avons une équipe de développeurs qualifiés qui sont experts dans les derniers frameworks d'applications, tels que Angular 1 et Google Web Toolkit.
+  </ListItem>
+  <ListItem title="Commerce électronique">
+    Nous sommes à la pointe du développement moderne du commerce électronique. Ce qui signifie principalement ajouter votre logo au modèle de boutique Shopify que nous utilisons depuis les six dernières années.
+  </ListItem>
+  <ListItem title="Gestion de contenu personnalisée">
+    Chez Morinox Studio , nous comprenons l'importance d'avoir un CMS robuste et personnalisé. C'est pourquoi nous gérons tous nos projets clients à partir d'une seule instance énorme de Joomla.
+  </ListItem>
           </List>
         </div>
       </Container>
@@ -174,8 +165,8 @@ function Services() {
 
 export const metadata: Metadata = {
   description:
-    'We are a development studio working at the intersection of design and technology.',
-}
+
+  "Nous sommes un studio de développement travaillant à l'intersection du design et de la technologie.",}
 
 export default async function Home() {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
@@ -185,12 +176,10 @@ export default async function Home() {
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Award-winning development studio based in Denmark.
-          </h1>
+          Studio de développement primé basé au Canada.          </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a development studio working at the intersection of design
-            and technology. It’s a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+          Nous sommes un studio de développement travaillant à l'intersection du design et de la technologie. C'est une intersection vraiment animée cependant, beaucoup de notre personnel a été impliqué dans des accidents.
+
           </p>
         </FadeIn>
       </Container>
@@ -203,9 +192,8 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+  L'équipe chez Morinox Studio  a dépassé toutes les attentes lors de notre intégration, trouvant même un moyen d'accéder au microphone de l'utilisateur sans déclencher l'un de ces agaçants boîtes de dialogue de permission.
+
       </Testimonial>
 
       <Services />

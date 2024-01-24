@@ -1,4 +1,4 @@
-// File: /Users/zachary/Documents/Personelle/vintageapp/app/page.tsx
+// File: /Users/zachary/Documents/Personelle/shopifyreactapp/vintageappshopify/app/page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
